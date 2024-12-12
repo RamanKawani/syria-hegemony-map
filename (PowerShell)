@@ -1,0 +1,8 @@
+# Remove old virtual environment (if any)
+Remove-Item -Recurse -Force .\venv
+
+# Create a new virtual environment
+python -m venv .\venv
+
+# Activate the virtual environment
+.\venv\Scripts\Activate
