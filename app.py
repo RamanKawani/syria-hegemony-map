@@ -1,13 +1,15 @@
-from flask import Flask, jsonify, render_template
-from routes.mapRoutes import map_routes
+from flask import Flask, jsonify
+
+# Initialize the Flask app
 app = Flask(__name__)
 
-# Registering Routes
-app.register_blueprint(map_routes)
-
 @app.route('/')
-def index():
-    return render_template('index.html')  # Optionally, render an HTML page
+def home():
+    return "Welcome to the Syria Hegemony Map!"
+
+@app.route('/data')
+def data():
+    return jsonify({"message": "Data about the hegemony of groups in Syria"})
 
 if __name__ == '__main__':
     app.run(debug=True)
