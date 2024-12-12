@@ -1,8 +1,2 @@
-# Create a new virtual environment (replace 'venv' with your desired name)
-python3 -m venv venv
-
-# Activate the virtual environment
-# For Linux/MacOS:
-source venv/bin/activate
-# For Windows:
 venv\Scripts\activate
+
